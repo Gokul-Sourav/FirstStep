@@ -15,7 +15,7 @@ var Each=require('async-each');
 app.use(bodyparser.json());
 app.use(express.static(__dirname+"/public"));
 
-MongoClient.connect("mongodb://10.201.47.86:27017/meeting",function(err,database){
+MongoClient.connect("mongodb://192.168.1.0/meeting",function(err,database){
    // console.log(err);
     db = database;
    // console.log(db);
